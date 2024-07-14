@@ -3,14 +3,15 @@ Welcome to AI Kitchen for India! This project aims to revolutionize the cooking 
 Table of Contents
 
 1. Introduction
-Features
-Technologies Used
-Installation
-Usage
-Figma Design
-Contributing
-License
-Introduction
+2. Features
+3. Technologies Used
+4. Usage
+5. Figma Design
+
+
+
+**
+Introduction**
 
 AI Kitchen for India is designed to be a tech tool of the future, helping users identify ingredients, suggest recipes, and provide step-by-step cooking instructions. The application leverages the power of AI to simplify and enhance the cooking process, making it accessible and enjoyable for everyone.
 
