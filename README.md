@@ -1,4 +1,4 @@
-##AI kitchen
+#AI kitchen
 Welcome to AI Kitchen for India! This project aims to revolutionize the cooking experience by integrating cutting-edge AI technology to assist users in the kitchen. Utilizing object detection through the camera, the application offers a variety of features to make cooking more efficient and enjoyable.
 
 Table of Contents
