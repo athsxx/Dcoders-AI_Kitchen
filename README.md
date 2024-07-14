@@ -35,8 +35,9 @@ Figma Design
 The user interface and experience of AI Kitchen for India were meticulously designed using Figma. You can view the design prototype here:
 https://www.figma.com/design/1rznz84plJ6s4bU7ihmBLm/Intel-Project?node-id=0-1&t=EEgjEXuOmTZCxzoZ-1
 
-
 Here are some screenshots of the design:
+
+
 ![PHOTO-2024-07-14-22-57-52](https://github.com/user-attachments/assets/9717fd24-469f-4d8f-bba2-2cc4d4c959b0)
 ![PHOTO-2024-07-14-22-58-22](https://github.com/user-attachments/assets/d99f5a60-4139-4715-ae77-89848cb99463)
 ![PHOTO-2024-07-14-23-03-13](https://github.com/user-attachments/assets/ad748f75-a044-49d3-b96d-08835def6c44)
