@@ -1,0 +1,11 @@
+1. NLP recipe generation                                                                                
+your_project_directory/     					                                                                    
+│
+├── app1.py
+├── veg_recipes.csv
+├── templates/
+│   └── index1.html
+├── static/
+│   ├── style1.css
+│   └── script1.js
+└── requirements.txt
