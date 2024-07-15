@@ -27,7 +27,11 @@ Nutritional Information: Displays nutritional information for ingredients and re
 Python: Core programming language used for developing the application.
 TensorFlow/Keras: Employed for the object detection model.
 OpenCV: Utilized for image processing and camera operations.
-NLP: Used for generating recipes based on user inputs.
+NLP: Used for generating recipes based on user inputs-
+_NLP.py_ includes normal recipe
+_NLP-voice_ includes voice output 
+
+
 Figma: Used for designing the user interface and overall user experience.
 
 **Figma Design**
