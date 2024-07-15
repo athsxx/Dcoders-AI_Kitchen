@@ -1,0 +1,70 @@
+                                      +---------------+
+                                      |  User Input  |
+                                      |  (string, max 100 chars) |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Data Loader  |
+                                      |  (reads CSV file, 1000 recipes) |
+                                      |  returns list of recipes (1000x) |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Text Preprocessor  |
+                                      |  (input: 1000x strings,  |
+                                      |   output: 1000x preprocessed strings) |
+                                      |  removes bracketed content,  |
+                                      |  converts to lowercase,  |
+                                      |  removes stop words and punctuation |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Word2Vec Model    |
+                                      |  (input: 1000x preprocessed strings,  |
+                                      |   output: 100x100 word embedding matrix) |
+                                      |  vector size: 100, window size: 5,  |
+                                      |  min count: 1, epochs: 10 |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Ingredient Extractor  |
+                                      |  (input: 1x preprocessed string,  |
+                                      |   output: list of 5-10 ingredients) |
+                                      |  uses Word2Vec model to identify  |
+                                      |  ingredients in recipe text |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Utensil and Instruction  |
+                                      |  Extractor (input: 1x preprocessed string,  |
+                                      |   output: list of 5-10 utensils and  |
+                                      |   instructions) |
+                                      |  uses Word2Vec model to identify  |
+                                      |  utensils and instructions in recipe text |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Text-to-Speech (TTS) Module |
+                                      |  (input: list of ingredients, utensils,  |
+                                      |   and instructions, output: audio file) |
+                                      |  uses gTTS library to convert text to speech |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Speech Output  |
+                                      |  (audio file, 1-2 minutes duration) |
+                                      +---------------+
