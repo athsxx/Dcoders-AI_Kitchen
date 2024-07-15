@@ -11,9 +11,8 @@ AI Kitchen for India is an innovative application designed to revolutionize the 
 - **Implementation**: Detects and classifies various  fruits,vegetables,spices,cereals and utensils using  MobileNetV2 for fine-grained classification.
 - **Data Augmentation**: Uses TensorFlow’s `ImageDataGenerator` for rescaling, augmentation, and generating training and validation datasets.
 
-### Recipe Generation
-- **Natural Language Processing (NLP)**: Generates recipes based on the detected ingredients using NLP techniques.
-
+### Recipe Reader
+- **Natural Language Processing (NLP)**:Process the instructions,ingredients and utensils and display them based on user input
 ### Frontend
 - **Technologies**: HTML, CSS, JavaScript.
 - **Design**: Implements user-friendly design principles using Figma for prototyping and layout design.
@@ -69,6 +68,7 @@ Here are some screenshots of the design:
 ![PHOTO-2024-07-14-23-04-19](https://github.com/user-attachments/assets/a30023a0-73b6-414d-9dd7-58a68372b563)
 ![PHOTO-2024-07-14-23-04-55](https://github.com/user-attachments/assets/8632b87a-0d27-4d02-a0ce-2b41316a7d66)
 ![PHOTO-2024-07-14-23-05-20](https://github.com/user-attachments/assets/7f91110d-e5ca-4094-811d-c1f5d3d28d51)
+![Screenshot 2024-07-15 230009](https://github.com/user-attachments/assets/711998d1-1bc9-4f17-9308-4e0d65d92850)
 
 
 
