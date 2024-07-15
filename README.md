@@ -17,17 +17,24 @@ AI Kitchen for India is designed to be a tech tool of the future, helping users 
 **Features**
 
 Object Detection: Uses the camera to detect and identify various ingredients.
+
 Recipe Suggestions: Provides recipe suggestions based on detected ingredients.
+
 Step-by-Step Instructions: Offers detailed cooking instructions to guide users through the recipe.
+
 Voice Assistance: Supports voice commands for hands-free operation.
-Nutritional Information: Displays nutritional information for ingredients and recipes.
+
 
 **Technologies Used**
 
 Python: Core programming language used for developing the application.
+
 TensorFlow/Keras: Employed for the object detection model.
+
 OpenCV: Utilized for image processing and camera operations.
+
 NLP: Used for generating recipes based on user inputs-
+
 _NLP.py_ includes normal recipe
 _NLP-voice_ includes voice output 
 
