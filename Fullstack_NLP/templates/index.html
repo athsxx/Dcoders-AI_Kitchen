@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Analysis</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Recipe Analysis</h1>
+    <form id="recipeForm">
+        <label for="recipeName">Recipe Name:</label>
+        <input type="text" id="recipeName" name="recipeName">
+        <button type="submit">Analyze</button>
+    </form>
+    <div id="results">
+        <h2>Ingredients</h2>
+        <ul id="ingredientsList"></ul>
+        <h2>Utensils</h2>
+        <ul id="utensilsList"></ul>
+        <h2>Instructions</h2>
+        <ol id="instructionsList"></ol>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#recipeForm').submit(function(event){
+                event.preventDefault();
+                var recipeName = $('#recipeName').val();
+                $.ajax({
+                    url: '/analyze_recipe',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ recipe_name: recipeName }),
+                    success: function(response){
+                        if (response.error) {
+                            alert(response.error);
+                        } else {
+                            $('#ingredientsList').empty();
+                            $('#utensilsList').empty();
+                            $('#instructionsList').empty();
+                            response.ingredients.forEach(function(ingredient){
+                                $('#ingredientsList').append('<li>' + ingredient + '</li>');
+                            });
+                            response.utensils.forEach(function(utensil){
+                                $('#utensilsList').append('<li>' + utensil + '</li>');
+                            });
+                            response.instructions.forEach(function(instruction){
+                                $('#instructionsList').append('<li>' + instruction + '</li>');
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
