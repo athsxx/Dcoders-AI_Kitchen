@@ -6,9 +6,9 @@ AI Kitchen for India is an innovative application designed to revolutionize the 
 ## Key Features
 
 ### Object Detection
-- **Dataset**: Utilizes the "Fruit and Vegetable Image Recognition" dataset from Kaggle.
-- **Models**: Employs YOLO (You Only Look Once) for real-time object detection and MobileNetV2 for classification.
-- **Implementation**: Detects and classifies various fruits and vegetables using a combination of YOLO for detection and MobileNetV2 for fine-grained classification.
+- **Dataset**: Utilizes custom made dataset to detect various fruits,vegetables,spices,cereals and utensils found in Indian Kitchen.
+- **Models**: Employs  and MobileNetV2 for classification and recognition.
+- **Implementation**: Detects and classifies various  fruits,vegetables,spices,cereals and utensils using  MobileNetV2 for fine-grained classification.
 - **Data Augmentation**: Uses TensorFlow’s `ImageDataGenerator` for rescaling, augmentation, and generating training and validation datasets.
 
 ### Recipe Generation
