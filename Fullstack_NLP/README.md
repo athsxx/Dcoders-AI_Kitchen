@@ -21,4 +21,4 @@ your_project_directory/     					                                         your_p
 <img width="1512" alt="Screenshot 2024-07-15 at 8 06 44 PM" src="https://github.com/user-attachments/assets/c780c5e0-1e69-4701-b509-480b19b5a91d">
 2. NLP voice assistant
 <img width="1512" alt="Screenshot 2024-07-15 at 8 11 13 PM" src="https://github.com/user-attachments/assets/ae8c35a9-186b-464d-bd75-a42f1b1397b8">
-**_The audio play button at the below of the above screenshot gets downloaded and can be placed there itself_**
+**_The audio play button at below of the above screenshot gets downloaded and can be placed there itself_**
