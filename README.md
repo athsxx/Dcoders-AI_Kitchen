@@ -50,11 +50,6 @@ AI Kitchen for India exemplifies the potential of AI to enhance everyday activit
 2. Place the `kaggle.json` file in the `~/.kaggle/` directory (Mac/Linux) or `C:\Users\<YourUsername>\.kaggle\` (Windows).
 
 ### Download the Dataset
-Run the following commands in your terminal:
-```bash
-kaggle datasets download -d kritikseth/fruit-and-vegetable-image-recognition
-unzip fruit-and-vegetable-image-recognition.zip -d path/to/dataset/
-
 
 ###NLP: Used for generating recipes based on user inputs-###
 1. _NLP.py_ includes a normal recipe
