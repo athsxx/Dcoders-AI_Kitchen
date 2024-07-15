@@ -1,5 +1,5 @@
 1. NLP recipe generation                                                                                 2. NLP voice assistant        
-your_project_directory/     					                                                                   your_project_directory/   
+your_project_directory/     					                                                               your_project_directory/   
 │                                                                                                        │        
 ├── app1.py                                                                                              ├── app1.py        
 ├── veg_recipes.csv                                                                                      ├── veg_recipes.csv 
