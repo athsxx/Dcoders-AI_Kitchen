@@ -1,37 +1,53 @@
-#AI kitchen
+# AI Kitchen for India
 
-Welcome to AI Kitchen for India! This project aims to revolutionize the cooking experience by integrating cutting-edge AI technology to assist users in the kitchen. Utilizing object detection through the camera, the application offers a variety of features to make cooking more efficient and enjoyable.
+## Overview
+AI Kitchen for India is an innovative application designed to revolutionize the cooking experience. By leveraging advanced machine learning and computer vision techniques, this application assists users in identifying fruits and vegetables, generating recipes, and providing real-time kitchen assistance. The project showcases the future of tech-enabled culinary practices, integrating object detection, natural language processing (NLP), and user-friendly interfaces to create a seamless and intuitive cooking companion.
 
-Table of Contents
+## Key Features
 
-1. Introduction
-2. Features
-3. Technologies Used
-4. Figma Design
+### Object Detection
+- **Dataset**: Utilizes the "Fruit and Vegetable Image Recognition" dataset from Kaggle.
+- **Models**: Employs YOLO (You Only Look Once) for real-time object detection and MobileNetV2 for classification.
+- **Implementation**: Detects and classifies various fruits and vegetables using a combination of YOLO for detection and MobileNetV2 for fine-grained classification.
+- **Data Augmentation**: Uses TensorFlow’s `ImageDataGenerator` for rescaling, augmentation, and generating training and validation datasets.
 
+### Recipe Generation
+- **Natural Language Processing (NLP)**: Generates recipes based on the detected ingredients using NLP techniques.
 
-**Introduction**
+### Frontend
+- **Technologies**: HTML, CSS, JavaScript.
+- **Design**: Implements user-friendly design principles using Figma for prototyping and layout design.
 
-AI Kitchen for India is designed to be a tech tool of the future, helping users identify ingredients, suggest recipes, and provide step-by-step cooking instructions. The application leverages the power of AI to simplify and enhance the cooking process, making it accessible and enjoyable for everyone.
+### Backend
+- **Framework**: Flask.
+- **API Integration**: Provides APIs for object detection, classification, and recipe generation.
 
-**Features**
+## Technology Stack
+- **Frontend**: HTML, CSS, JavaScript, Figma for design.
+- **Backend**: Flask, TensorFlow/Keras for machine learning models.
+- **Models**: YOLO for object detection, MobileNetV2 for classification.
+- **Data Handling**: TensorFlow’s `ImageDataGenerator` for data augmentation.
 
-Object Detection: Uses the camera to detect and identify various ingredients.
+## Usage
+The application provides a camera interface for users to scan their kitchen ingredients. Upon detection, the app lists the identified items and suggests recipes that can be made from them. Users can interact with the app through a web interface, with real-time processing handled by the backend.
 
-Recipe Suggestions: Provides recipe suggestions based on detected ingredients.
+## Conclusion
+AI Kitchen for India leverages cutting-edge AI and web technologies to enhance the cooking experience, making it more intuitive and interactive. By combining object detection, recipe generation, and a seamless user interface, the project demonstrates the potential of AI in everyday applications.
 
-Step-by-Step Instructions: Offers detailed cooking instructions to guide users through the recipe.
+## Setup and Installation
 
-Voice Assistance: Supports voice commands for hands-free operation.
+### Prerequisites
+- Python 3.6+
+- pip (Python package installer)
+- Kaggle API
 
+### Steps
 
-**Technologies Used**
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/AI-Kitchen-for-India.git
+   cd AI-Kitchen-for-India
 
-Python: Core programming language used for developing the application.
-
-TensorFlow/Keras: Employed for the object detection model.
-
-OpenCV: Utilized for image processing and camera operations.
 
 NLP: Used for generating recipes based on user inputs-
 1. _NLP.py_ includes a normal recipe
