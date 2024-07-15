@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Analyzer</title>
+    <link rel="stylesheet" href="/static/style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Analyzer</h1>
+        <form id="recipe-form">
+            <label for="recipe-name">Enter the name of the recipe:</label>
+            <input type="text" id="recipe-name" name="recipe-name" required>
+            <button type="submit">Analyze</button>
+        </form>
+        <div id="results" class="hidden">
+            <h2>Results</h2>
+            <p><strong>Ingredients:</strong></p>
+            <ul id="ingredients-list"></ul>
+            <p><strong>Utensils:</strong></p>
+            <ul id="utensils-list"></ul>
+            <p><strong>Instructions:</strong></p>
+            <ol id="instructions-list"></ol>
+            <audio controls id="audio-player" class="hidden">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    <script src="/static/script1.js"></script>
+</body>
+</html>
