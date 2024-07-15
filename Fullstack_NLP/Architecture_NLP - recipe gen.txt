@@ -1,1 +1,69 @@
 
+     +---------------+
+2                                      |  Frontend    |
+3                                      |  (index.html) |
+4                                      |  - User selects  |
+5                                      |    recipe to analyze |
+6                                      +---------------+
+7                                             |
+8                                             |
+9                                             v
+10                                      +---------------+
+11                                      |  Flask App    |
+12                                      |  (app.py)     |
+13                                      |  - Receives recipe  |
+14                                      |    name as JSON payload |
+15                                      |  - Calls analyze_recipe  |
+16                                      |    function            |
+17                                      +---------------+
+18                                             |
+19                                             |
+20                                             v
+21                                      +---------------+
+22                                      |  analyze_recipe  |
+23                                      |  function        |
+24                                      |  - Finds recipe in  |
+25                                      |    veg_recipes.csv    |
+26                                      |  - Calls extract_ingredients_w2v |
+27                                      |    and extract_utensils_and_instructions_w2v |
+28                                      |    functions          |
+29                                      +---------------+
+30                                             |
+31                                             |
+32                                             v
+33                                      +---------------+
+34                                      |  extract_ingredients_w2v |
+35                                      |  function        |
+36                                      |  - Removes bracketed content |
+37                                      |  - Tokenizes text using Spacy |
+38                                      |  - Extracts ingredients using  |
+39                                      |    Word2Vec model          |
+40                                      +---------------+
+41                                             |
+42                                             |
+43                                             v
+44                                      +---------------+
+45                                      |  extract_utensils_and_instructions_w2v |
+46                                      |  function        |
+47                                      |  - Finds utensils in text using  |
+48                                      |    common_utensils list      |
+49                                      |  - Extracts instructions using  |
+50                                      |    Spacy sentence parsing    |
+51                                      +---------------+
+52                                             |
+53                                             |
+54                                             v
+55                                      +---------------+
+56                                      |  Flask App    |
+57                                      |  (app.py)     |
+58                                      |  - Returns extracted data as  |
+59                                      |    JSON response          |
+60                                      +---------------+
+61                                             |
+62                                             |
+63                                             v
+64                                      +---------------+
+65                                      |  Frontend    |
+66                                      |  (index.html) |
+67                                      |  - Displays extracted data  |
+68                                      +---------------+
