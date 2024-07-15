@@ -34,9 +34,8 @@ TensorFlow/Keras: Employed for the object detection model.
 OpenCV: Utilized for image processing and camera operations.
 
 NLP: Used for generating recipes based on user inputs-
-
-_NLP.py_ includes normal recipe
-_NLP-voice_ includes voice output 
+1. _NLP.py_ includes a normal recipe
+2. _NLP-voice_ includes voice output 
 
 
 Figma: Used for designing the user interface and overall user experience.
