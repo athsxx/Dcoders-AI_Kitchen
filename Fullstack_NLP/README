@@ -1,11 +1,11 @@
-1. NLP recipe generation                                                                                
-your_project_directory/     					                                                                    
-│
-├── app1.py
-├── veg_recipes.csv
-├── templates/
-│   └── index1.html
-├── static/
-│   ├── style1.css
-│   └── script1.js
-└── requirements.txt
+1. NLP recipe generation                                                                                 2. NLP voice assistant        
+your_project_directory/     					                                                                   your_project_directory/   
+│                                                                                                        │        
+├── app1.py                                                                                              ├── app1.py        
+├── veg_recipes.csv                                                                                      ├── veg_recipes.csv 
+├── templates/                                                                                           ├── templates/
+│   └── index1.html                                                                                      │   └── index1.html
+├── static/                                                                                              ├── static/      
+│   ├── style1.css                                                                                       │   ├── style1.css      
+│   └── script1.js                                                                                       │   └── script1.js
+└── requirements.txt                                                                                     └── requirements.txt
