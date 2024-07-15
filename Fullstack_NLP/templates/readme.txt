@@ -1,2 +1,4 @@
-1. index.html is for NLP recipe generation
-2. index1.html is for NLP voice assistant 
+1. NLP recipe generation - 
+    index.html
+2. NLP voice assistant - 
+    index1.html
