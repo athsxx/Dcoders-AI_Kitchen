@@ -1,0 +1,49 @@
+**Step 1: User Input**
+
+• The user inputs a string (max 100 characters) through a web interface or API.
+• The input is sent to the Data Loader component.
+
+**Step 2: Data Loader**
+
+• The Data Loader reads a CSV file containing 1000 recipes.
+• The Data Loader returns a list of 1000 recipes to the Text Preprocessor component.
+
+**Step 3: Text Preprocessor**
+
+• The Text Preprocessor receives the list of 1000 recipes from the Data Loader.
+• The Text Preprocessor removes bracketed content, converts text to lowercase, and removes stop words and punctuation from each recipe.
+• The Text Preprocessor returns a list of 1000 preprocessed recipes to the Word2Vec Model component.
+
+**Step 4: Word2Vec Model**
+
+• The Word2Vec Model receives the list of 1000 preprocessed recipes from the Text Preprocessor.
+• The Word2Vec Model trains a word embedding model with the following hyperparameters:
+• Vector size: 100
+• Window size: 5
+• Min count: 1
+• Epochs: 10
+• The Word2Vec Model returns a 100x100 word embedding matrix to the Ingredient Extractor and Utensil and Instruction Extractor components.
+
+**Step 5: Ingredient Extractor**
+
+• The Ingredient Extractor receives the preprocessed recipe text and the word embedding matrix from the Word2Vec Model.
+• The Ingredient Extractor uses the word embedding matrix to identify 5-10 ingredients in the recipe text.
+• The Ingredient Extractor returns a list of extracted ingredients to the Recipe Generator component.
+
+**Step 6: Utensil and Instruction Extractor**
+
+• The Utensil and Instruction Extractor receives the preprocessed recipe text and the word embedding matrix from the Word2Vec Model.
+• The Utensil and Instruction Extractor uses the word embedding matrix to identify 5-10 utensils and instructions in the recipe text.
+• The Utensil and Instruction Extractor returns a list of extracted utensils and instructions to the Recipe Generator component.
+
+**Step 7: Recipe Generator**
+
+• The Recipe Generator receives the lists of extracted ingredients, utensils, and instructions from the Ingredient Extractor and Utensil and Instruction Extractor components.
+• The Recipe Generator generates a complete recipe based on the extracted information.
+• The Recipe Generator returns the generated recipe to the Speech/Text Output component.
+
+Step 8: Speech/Text Output
+
+• The Speech/Text Output component receives the generated recipe from the Recipe Generator.
+• The Speech/Text Output component provides the user with the generated recipe in both text and speech formats.
+• The user can choose to view the recipe as text or listen to it as an audio file.
