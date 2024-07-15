@@ -1,5 +1,5 @@
 1. NLP recipe generator
-"https://github.com/user-attachments/assets/927af281-12d2-4bf3-8c49-c0fa8e469da7">
+<img width="1512" alt="Screenshot 2024-07-15 at 7 59 09 PM" src="https://github.com/user-attachments/assets/4edb9366-e536-4b9d-8220-e9717eb29c39">
 1. NLP recipe generator
 <img width="1512" alt="Screenshot 2024-07-15 at 7 59 28 PM" src="https://github.com/user-attachments/assets/95550370-859a-4b45-b82f-5fb069a8e058">
 2. NLP voice assistant
