@@ -45,9 +45,18 @@ AI Kitchen for India exemplifies the potential of AI to enhance everyday activit
    ```bash
    git clone https://github.com/yourusername/AI-Kitchen-for-India.git
    cd AI-Kitchen-for-India
+### Set Up Kaggle API
+1. Go to your Kaggle account and generate the API token (`kaggle.json`).
+2. Place the `kaggle.json` file in the `~/.kaggle/` directory (Mac/Linux) or `C:\Users\<YourUsername>\.kaggle\` (Windows).
+
+### Download the Dataset
+Run the following commands in your terminal:
+```bash
+kaggle datasets download -d kritikseth/fruit-and-vegetable-image-recognition
+unzip fruit-and-vegetable-image-recognition.zip -d path/to/dataset/
 
 
-NLP: Used for generating recipes based on user inputs-
+###NLP: Used for generating recipes based on user inputs-###
 1. _NLP.py_ includes a normal recipe
 2. _NLP-voice_ includes voice output 
 
